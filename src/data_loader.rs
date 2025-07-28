@@ -1,7 +1,7 @@
-use std::path::PathBuf;
-use std::sync::mpsc;
 use egui::Context;
 use once_cell::sync::Lazy;
+use std::path::PathBuf;
+use std::sync::mpsc;
 use tokio::runtime::Runtime;
 
 static RT: Lazy<Runtime> = Lazy::new(|| Runtime::new().expect("Unable to create Runtime"));

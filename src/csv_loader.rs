@@ -1,13 +1,9 @@
-use std::path::PathBuf;
-use futures::stream::StreamExt;
-use tokio_util::compat::TokioAsyncReadCompatExt;
 use crate::data_loader::DataLoadResult;
+use futures::stream::StreamExt;
+use std::path::PathBuf;
+use tokio_util::compat::TokioAsyncReadCompatExt;
 
-pub async fn load_csv_data(
-    path: PathBuf,
-    start_row: usize,
-    num_rows: usize,
-) -> DataLoadResult {
+pub async fn load_csv_data(path: PathBuf, start_row: usize, num_rows: usize) -> DataLoadResult {
     let file = tokio::fs::File::open(path)
         .await
         .map_err(|e| e.to_string())?;
