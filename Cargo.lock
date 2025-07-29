@@ -2931,6 +2931,7 @@ dependencies = [
  "encoding_rs_io",
  "futures",
  "once_cell",
+ "regex",
  "rfd",
  "tokio",
  "tokio-util",
