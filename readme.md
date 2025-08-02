@@ -1,4 +1,3 @@
-```markdown
 # rust_excel_reader
 
 `rust_excel_reader` 是一個用於讀取和顯示 CSV 或 Excel 文件內容的桌面應用程式，基於 Rust 語言開發。該應用程式使用了現代的 GUI 框架 `eframe` 和 `egui`，並結合了異步編程技術，以提供流暢的用戶體驗。
@@ -79,4 +78,3 @@ src/
 ---
 
 感謝您使用 `rust_excel_reader`！希望這個應用能夠幫助您輕鬆地讀取和處理 CSV 和 Excel 文件。
-```
